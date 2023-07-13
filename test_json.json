@@ -1,0 +1,64 @@
+{
+    "rules": [
+        {
+            "action": {
+                "type": "expire"
+            },
+            "selection": {
+                "countType": "imageCountMoreThan",
+                "countNumber": 5,
+                "tagStatus": "tagged",
+                "tagPrefixList": [
+                    "v1"
+                ]
+            },
+            "description": "V1 Test",
+            "rulePriority": 1
+        },
+        {
+            "action": {
+                "type": "expire"
+            },
+            "selection": {
+                "countType": "imageCountMoreThan",
+                "countNumber": 5,
+                "tagStatus": "tagged",
+                "tagPrefixList": [
+                    "v1.1"
+                ]
+            },
+            "description": "V1.1 Test",
+            "rulePriority": 2
+        },
+        {
+            "action": {
+                "type": "expire"
+            },
+            "selection": {
+                "countType": "imageCountMoreThan",
+                "countNumber": 5,
+                "tagStatus": "tagged",
+                "tagPrefixList": [
+                    "v2"
+                ]
+            },
+            "description": "V2 Test",
+            "rulePriority": 3
+        },
+        {
+            "action": {
+                "type": "expire"
+            },
+            "selection": {
+                "countType": "imageCountMoreThan",
+                "countNumber": 5,
+                "tagStatus": "tagged",
+                "tagPrefixList": [
+                    "v2.0.1"
+                ]
+            },
+            "description": "V2.0.1 Test",
+            "rulePriority": 4
+        }
+    ]
+}

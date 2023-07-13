@@ -1,0 +1,34 @@
+{
+  "rules": [
+    {
+      "action": {
+        "type": "expire"
+      },
+      "selection": {
+        "countType": "imageCountMoreThan",
+        "countNumber": 5,
+        "tagStatus": "tagged",
+        "tagPrefixList": [
+          "v1"
+        ]
+      },
+      "description": "V1 Test",
+      "rulePriority": 1
+    },
+    {
+      "action": {
+        "type": "expire"
+      },
+      "selection": {
+        "countType": "imageCountMoreThan",
+        "countNumber": 5,
+        "tagStatus": "tagged",
+        "tagPrefixList": [
+          "v2"
+        ]
+      },
+      "description": "V2 Test",
+      "rulePriority": 1
+    }
+  ]
+}

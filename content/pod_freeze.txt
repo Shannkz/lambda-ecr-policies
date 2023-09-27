@@ -1,0 +1,18 @@
+Resource Depletion:
+Limit the CPU or memory resources allocated to a Pod using Kubernetes resource constraints (e.g., CPU and memory requests and limits). This can cause the Pod to become starved for resources and become unresponsive.
+Introduce Artificial Delays:
+Modify your application's code or configuration to introduce delays in processing requests. For example, add sleep statements or intentionally slow down database queries.
+Network Issues:
+Introduce network problems like packet loss, high latency, or network partitioning between the Pod and its dependencies. Tools like iptables can be used to simulate network issues.
+Crash Container Processes:
+Temporarily crash one or more processes inside the Pod's container using the kill command or similar tools. This can mimic a scenario where the application becomes unresponsive.
+Fault Injection Tools:
+Use tools like Chaos Monkey, Litmus, or other Chaos Engineering tools specifically designed for Kubernetes to introduce failures and simulate various fault scenarios.
+Resource Contentions:
+Deploy multiple Pods on the same node and make them compete for resources. This can lead to resource contention and potentially freeze some Pods.
+Disk I/O Issues:
+Simulate heavy disk I/O activity within the Pod, causing I/O bottlenecks and making the application less responsive.
+Custom Scripting:
+Write custom scripts or use Kubernetes Job objects to perform actions that induce a freeze. For instance, you can create a Job that consumes all available resources or crashes a process within the Pod.
+Scale Down:
+If your application is designed to run with multiple replicas, scale down the number of replicas to one. This way, if the sole remaining Pod experiences any issues, it can simulate a freeze without affecting the entire application.
